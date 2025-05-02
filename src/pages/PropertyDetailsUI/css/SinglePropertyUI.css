@@ -1,0 +1,131 @@
+.overview-container {
+  background-color: #fff;
+  margin-top: 1rem;
+  /* border-radius: 12px; */
+  height: auto;
+  padding: 2rem;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.overview-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+}
+
+.overview-text {
+  font-size: 1rem;
+  margin-bottom: 0px;
+  font-family: 'Poppins', sans-serif;
+  text-align: justify;
+}
+
+.overview-ratings {
+  font-size: 1.3rem;
+  background-color: #ADC939;
+  color: #fff;
+  border-radius: 12px;
+  padding: 5px;
+  font-family: 'Poppins', sans-serif;
+  display: inline-block; /* This replaces fit-content for width */
+ 
+}
+
+.email-btn {
+  background-color: #16B4DD;
+  color: #fff;
+  border-radius: 8px;
+  padding: 0.5rem 2rem;
+  font-family: 'Poppins', sans-serif;
+  border: none; /* Use 'none' instead of 'border-color: none' */
+  box-shadow: none; /* Remove box-shadow */
+  cursor: pointer; /* Add cursor pointer for better UX */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+  margin-top: 1rem;
+  font-size: 1rem;
+
+  /* Hover effect */
+  &:hover {
+    background-color: #14a1c5;
+  }
+}
+.hostdetails-cntr {
+  background-color: #16B4DD;
+  color: #fff;
+  border-radius: 8px;
+  padding: 0.3rem 0.3rem;
+  font-family: 'Poppins', sans-serif;
+  display: inline-block; /* This replaces fit-content for width */
+  font-size: 0.875rem;
+  
+}
+
+.host-details-table {
+  width: 100%;
+  border-collapse: collapse; /* Remove default spacing between table cells */
+}
+
+.host-details-table td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd; /* Example border styling */
+  font-size: 0.875rem;
+}
+
+.host-details-table td:first-child {
+  font-weight: bold;
+  width: 40%; /* Adjust width of first column as needed */
+}
+
+.host-details-table td:last-child {
+  text-align: left; /* Align content in the second column */
+}
+
+.property-filter-container {
+  top: 0; 
+  background-color: white;
+  padding: 0.5rem;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;  /* Allow buttons to wrap to the next line */
+  border-radius: 12px;
+  overflow: hidden;  /* Hide horizontal scrollbar */
+  gap: 8px;  /* Optional: add space between buttons */
+}
+
+.property-filter-btn {
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, background-color 0.3s;
+  border-radius: 5px;
+  min-width: 120px;  /* Ensure buttons have a minimum width */
+}
+
+/* Hover state */
+.property-filter-btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* Clicked state */
+.property-filter-btn:active {
+  transform: scale(0.95);
+  opacity: 0.8;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+  .property-filter-btn {
+    font-size: 14px;  /* Adjust font size for smaller screens */
+    padding: 8px 16px;  /* Reduce padding on smaller screens */
+    min-width: 100px;  /* Adjust button width for smaller screens */
+  }
+}
